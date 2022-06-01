@@ -4,11 +4,13 @@ import Video from 'react-native-video';
 
 import SoundButton from './SoundButton';
 import MyColors from '../utils/colors';
+import Fonts from '../utils/fonts';
 
 import iphone from '../assets/iphone.mp4';
 import truck from '../assets/truck.png';
 import charger from '../assets/charger.png';
 import gift from '../assets/gift.png';
+import ImageHeading from './ImageHeading';
 
 const IphoneVideo = props => {
   const [muted, setMuted] = useState(true);
@@ -23,9 +25,9 @@ const IphoneVideo = props => {
   };
 
   var list = [
-    {image: truck, text: 'Priority Delivery'},
-    {image: charger, text: 'Free Charger'},
-    {image: gift, text: 'Tortoise Merch'},
+    {id: 1, image: truck, text: 'Priority Delivery'},
+    {id: 2, image: charger, text: 'Free Charger'},
+    {id: 3, image: gift, text: 'Tortoise Merch'},
   ];
 
   return (
@@ -46,15 +48,15 @@ const IphoneVideo = props => {
         <SoundButton muted={muted} onPress={toggleMute} />
       </View>
       <View style={styles.content}>
-        <Text style={styles.head1}>IPHONE SAVINGS PLAN</Text>
-        <Text style={styles.head2}>
-          Save up for the next iPhone and{' '}
-          <Text style={styles.greenText}>get 10% Cashback!</Text>
-        </Text>
+        <ImageHeading
+          head1="IPHONE SAVINGS PLAN"
+          head2="Save up for the next iPhone and"
+          subHead2="get 10% Cashback!"
+        />
         <View style={styles.horizontal}>
           {list.map((value, index) => {
             return (
-              <View>
+              <View key={value.id}>
                 <View style={styles.imageView}>
                   <Image source={value.image} height="100%" width="100%" />
                 </View>
@@ -74,28 +76,14 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     borderRadius: 17,
     marginTop: 20,
+    marginBottom: 25,
   },
   videoView: {
     borderTopLeftRadius: 17,
     borderTopRightRadius: 17,
     overflow: 'hidden',
   },
-  head1: {
-    fontFamily: 'Haffer XH',
-    fontStyle: 'normal',
-    fontWeight: '600',
-    fontSize: 12,
-    lineHeight: 18,
-    color: '#6F767E',
-  },
-  head2: {
-    fontFamily: 'Haffer XH',
-    fontStyle: 'normal',
-    fontWeight: '700',
-    fontSize: 20,
-    lineHeight: 27,
-    color: '#001B19',
-  },
+
   content: {
     paddingHorizontal: 20,
     paddingVertical: 15,
@@ -118,7 +106,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   imageText: {
-    fontFamily: 'Haffer XH',
+    fontFamily: Fonts.regular,
     fontStyle: 'normal',
     fontWeight: '600',
     fontSize: 9.90766,

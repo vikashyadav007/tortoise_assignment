@@ -3,11 +3,13 @@ import {View, StyleSheet, Text, Image} from 'react-native';
 
 import SoundButton from './SoundButton';
 import MyColors from '../utils/colors';
+import Fonts from '../utils/fonts';
 
 import Video from 'react-native-video';
 import video2 from '../assets/video2.mp4';
 
 import mmt_logo from '../assets/mmt_logo.png';
+import ImageHeading from './ImageHeading';
 
 const MMTVideo = props => {
   const [muted, setMuted] = useState(true);
@@ -41,11 +43,11 @@ const MMTVideo = props => {
         <SoundButton muted={muted} onPress={toggleMute} />
       </View>
       <View style={styles.content}>
-        <Text style={styles.head1}>MAKE MY TRIP SAVINGS PLAN</Text>
-        <Text style={styles.head2}>
-          Save up for the next Vacation and{' '}
-          <Text style={styles.greenText}>get 10% Cashback!</Text>
-        </Text>
+        <ImageHeading
+          head1="MAKE MY TRIP SAVINGS PLAN"
+          head2="Save up for the next Vacation and"
+          subHead2="get 10% Cashback!"
+        />
       </View>
     </View>
   );
@@ -57,35 +59,19 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
     borderRadius: 17,
     marginTop: 20,
+    marginBottom: 25,
   },
   videoView: {
     borderTopLeftRadius: 17,
     borderTopRightRadius: 17,
     overflow: 'hidden',
   },
-  head1: {
-    fontFamily: 'Haffer XH',
-    fontStyle: 'normal',
-    fontWeight: '600',
-    fontSize: 12,
-    lineHeight: 18,
-    color: '#6F767E',
-  },
-  head2: {
-    fontFamily: 'Haffer XH',
-    fontStyle: 'normal',
-    fontWeight: '700',
-    fontSize: 20,
-    lineHeight: 27,
-    color: '#001B19',
-  },
+
   content: {
     paddingHorizontal: 20,
-    paddingVertical: 15,
+    paddingVertical: 20,
   },
-  greenText: {
-    color: MyColors.tortoise_green,
-  },
+
   mmtLogoView: {
     position: 'absolute',
     bottom: 20,

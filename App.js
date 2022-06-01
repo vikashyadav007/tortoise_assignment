@@ -21,6 +21,7 @@ const App = props => {
       <ScrollView style={styles.screen}>
         <Header />
         <IhponeVideo />
+
         <MMTVideo />
         <View style={styles.paddingBottom} />
       </ScrollView>
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   paddingBottom: {
-    paddingBottom: 30,
+    paddingBottom: 80,
   },
 });
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
 
 import logo from '../assets/logo.png';
-import logo2 from '../assets/logo2.png';
+import Fonts from '../utils/fonts';
 
 const Header = props => {
   return (
@@ -18,7 +18,7 @@ const Header = props => {
       </View>
       <View style={styles.right}>
         <View style={styles.logoView}>
-          <Image source={logo2} style={styles.logoImage} />
+          <Image source={logo} style={styles.logoImage} />
         </View>
       </View>
     </View>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   welcomeText: {
-    fontFamily: 'AzeretMono-Regular',
+    fontFamily: Fonts.regular,
     fontStyle: 'normal',
     fontWeight: '500',
     fontSize: 12,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     color: 'rgba(17, 20, 45, 0.65)',
   },
   nameText: {
-    fontFamily: 'AzeretMono-Bold',
+    fontFamily: Fonts.bold,
     fontStyle: 'normal',
     fontWeight: '600',
     fontSize: 24,

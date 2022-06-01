@@ -23,6 +23,8 @@
 		D03AA37173D64C9BA7CAA4AC /* AzeretMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C130409F0832455BBED7C4CF /* AzeretMono-Regular.ttf */; };
 		1C977EB13B8D4D46BD7B1383 /* AzeretMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0C5E6EDD27C4E61A5577768 /* AzeretMono-SemiBold.ttf */; };
 		772B5FE4D09B4DE19FB3742B /* AzeretMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECEF8B93A464189A81AED4C /* AzeretMono-Thin.ttf */; };
+		6EF830A582DF41D89F057AA6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2DD78A0C04F1796EA0A7E /* Roboto-Bold.ttf */; };
+		78E07EA47273412A843D3636 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE6062849A4C29A56515C7 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		C130409F0832455BBED7C4CF /* AzeretMono-Regular.ttf */ = {isa = PBXFileReference; name = "AzeretMono-Regular.ttf"; path = "../assets/fonts/AzeretMono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E0C5E6EDD27C4E61A5577768 /* AzeretMono-SemiBold.ttf */ = {isa = PBXFileReference; name = "AzeretMono-SemiBold.ttf"; path = "../assets/fonts/AzeretMono-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		EECEF8B93A464189A81AED4C /* AzeretMono-Thin.ttf */ = {isa = PBXFileReference; name = "AzeretMono-Thin.ttf"; path = "../assets/fonts/AzeretMono-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0EF2DD78A0C04F1796EA0A7E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5DFE6062849A4C29A56515C7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 				C130409F0832455BBED7C4CF /* AzeretMono-Regular.ttf */,
 				E0C5E6EDD27C4E61A5577768 /* AzeretMono-SemiBold.ttf */,
 				EECEF8B93A464189A81AED4C /* AzeretMono-Thin.ttf */,
+				0EF2DD78A0C04F1796EA0A7E /* Roboto-Bold.ttf */,
+				5DFE6062849A4C29A56515C7 /* Roboto-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 				D03AA37173D64C9BA7CAA4AC /* AzeretMono-Regular.ttf in Resources */,
 				1C977EB13B8D4D46BD7B1383 /* AzeretMono-SemiBold.ttf in Resources */,
 				772B5FE4D09B4DE19FB3742B /* AzeretMono-Thin.ttf in Resources */,
+				6EF830A582DF41D89F057AA6 /* Roboto-Bold.ttf in Resources */,
+				78E07EA47273412A843D3636 /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
