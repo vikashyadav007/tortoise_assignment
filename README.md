@@ -18,3 +18,7 @@ import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 
 and close the app
 Again re run the app the warning will we removed.
+
+
+As of Now I have no Macbook so I haven't tested this app in iPhone, so There may be some UI Issuse I don't know. For better experience Try to build this App in Android only.
+
